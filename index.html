@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Left Column -->
+            <div class="w-full md:w-1/2 bg-gray-200 rounded-lg p-4 h-64">
+                <!-- Placeholder for content -->
+                <div class="w-full h-full flex items-center justify-center text-gray-500">
+                  <a href="https://cs50.harvard.edu/x/2025/">CS50:Computer Science Courses and Programs from Harvard</a>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="w-full md:w-1/2 bg-gray-100 rounded-lg p-4">
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-purple-600" id="item1">
+                        <label for="item1" class="ml-2 text-gray-700"><a href="https://core.tonyrobbins.com/Global/FileLib/PDF/Re-Awaken_the_Giant_Within_Highres.pdf">Read book</a></label>
+                    </li>
+                    <li class="flex items-center">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-purple-600" id="item2">
+                        <label for="item2" class="ml-2 text-gray-700">TED Talks</label>
+                    </li>
+                    <li class="flex items-center">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-purple-600" id="item3">
+                        <label for="item3" class="ml-2 text-gray-700">Cold Showers</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
