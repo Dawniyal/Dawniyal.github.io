@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Column Layout</title>
+    <title>Life Changing Link</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl p-6">
-        <div class="flex flex-col md:flex-row gap-6">
-            <!-- Left Column -->
-            <div class="w-full md:w-1/2 bg-gray-200 rounded-lg p-4 h-64">
-                <!-- Placeholder for content -->
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                  <a href="https://www.youtube.com/watch?v=spAgmT0Au1M">14 Days Life change </a> 
-                </div>
-            </div>
-        </div>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <h1 class="text-4xl font-bold mb-6 text-red-500" style="font-family: 'Permanent Marker', cursive;">Life changing</h1>
+        <a href="https://www.youtube.com/watch?v=spAgmT0Au1M" class="block bg-gray-200 rounded-lg p-6 text-center hover:bg-gray-300 transition duration-300">
+        </a>
     </div>
+
+    <script>
+        document.querySelector('a').addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
